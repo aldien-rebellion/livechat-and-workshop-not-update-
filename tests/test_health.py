@@ -16,5 +16,5 @@ def test_health_check():
     response = client.get("/api/v1/healthcheck")
     assert response.status_code == 200
     data = response.json()
-    assert data["status"] == "healthy1"
+    assert data["status"] == "healthy12"
     assert data["service"] == "livechat-workspace-backend"
